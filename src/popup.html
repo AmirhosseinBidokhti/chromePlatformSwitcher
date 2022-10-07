@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <title>Platform Switcher</title>
+
+    <style>
+        body {
+            color: #fff;
+            font-size: 18px;
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+
+            border: 0;
+        }
+
+        .current-title {
+            font-weight: bold;
+        }
+
+        #current-platform {
+            color: rgb(238, 255, 0);
+            margin-top: 4px;
+        }
+
+        label {
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-weight: bold;
+
+        }
+
+        .custom-platform-input {
+            margin-top: 5px;
+            border-radius: 1px;
+
+        }
+
+        input[type=button],
+        input[type=submit] {
+            background-color: #18453b;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            margin-top: 7px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="current">
+        <div class="current-title">Your current navigator platform</div>
+        <div id="current-platform"></div>
+    </div>
+    <br />
+
+    <div id="customize">
+        <label for="custom-platform">Type your desired platform</label>
+        <input type="text" id="platform-custom" class="custom-platform-input">
+        <input type="button" id="submit-platform" value="Change Platform">
+
+    </div>
+    <br />
+    <div id="reset">
+        <label for="submit-platform-reset">Reset to default</label>
+        <br />
+        <input type="button" id="submit-platform-reset" value="Reset">
+    </div>
+    </main>
+</body>
+<script src="popup.js"></script>
+
+</html>
